@@ -1,0 +1,53 @@
+{
+    "home": {
+        "tagline": "Nous créons des logiciels",
+        "title": [
+            "Nous créons",
+            "des logiciels"
+        ]
+    },
+    "navigation": {
+        "home": "Accueil",
+        "products": "Produits",
+        "about": "À propos",
+        "legal": "Légal",
+        "community": "Communauté",
+        "privacy": "Confidentialité",
+        "terms": "Conditions",
+        "disclaimers": "Avertissements"
+    },
+    "footer": {
+        "copy": "Ne pas reproduire.",
+        "brand": "Minteck Projects™, le logo Minteck Projects (incluant les versions précédentes) et tous les noms associés sont des marques légales de Minteck Projects en France et dans d'autres pays."
+    },
+    "start": {
+        "question": "Prêt à faire vos premiers pas ?",
+        "explore": "Explorer les produits"
+    },
+    "boxes": {
+        "design": {
+            "title": "Notre cœur va dans l'apparence",
+            "message": [
+                "Nous nous assurons que tous les éléments de l'interface d'un logiciel s'accordent correctement et sont consitants les uns avec les autres.",
+                [
+                    "Nos artistes ont",
+                    "ans d'expérience en création d'interface humaine et apprênent des nouvelles pratiques tous les jours."
+                ]
+            ]
+        },
+        "scale": {
+            "title": "Adaptable selon vos besoins",
+            "message": [
+                "Que vous soyez un particulier, un petit groupe, ou une grosse société, les logiciels de Minteck Projects sont toujours là pour vous aider à faire vos choses.",
+                "Nos utilisons des technologies qui s'adaptent selon la manière dont votre groupe s'agrandit et qui aide à donner à des milliers d'utilisateurs ce dont ils ont besoin au quotidien."
+            ]
+        },
+        "hack": {
+            "title": "Modifiez et adaptez les logiciels selon vos besoins",
+            "message": [
+                "Nos logiciels sont gratuits, libres, et opensource, ce qui veut dire que n'importe qui peut le prendre, le modifier, et le publier sans même demander aux auteurs originaux.",
+                "De cette façon, vous pouvez modifier nos logiciels selon vos besoins pour ajouter de nouvelles fonctionnalités; vous pouvez même publier vos changements pour qu'ils puissent être ajoutés au code original."
+            ]
+        }
+    }
+}

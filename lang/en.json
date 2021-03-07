@@ -1,0 +1,53 @@
+{
+    "home": {
+        "tagline": "We create software",
+        "title": [
+            "We create",
+            "software"
+        ]
+    },
+    "navigation": {
+        "home": "Home",
+        "products": "Products",
+        "about": "About",
+        "legal": "Legal",
+        "community": "Community",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "disclaimers": "Disclaimers"
+    },
+    "footer": {
+        "copy": "Do not reproduce.",
+        "brand": "Minteck Projects™, the Minteck Projects logo (including all previous versions) and all associated names are legal brands of Minteck Projects in France and other countries."
+    },
+    "start": {
+        "question": "Ready to get started?",
+        "explore": "Explore products"
+    },
+    "boxes": {
+        "design": {
+            "title": "Our heart go to design",
+            "message": [
+                "We make sure that all the elements of the software's interface mix up correctly and are consistent with each other.",
+                [
+                    "Our designers have",
+                    "years of experience in human interface design and they learn new design practices everyday."
+                ]
+            ]
+        },
+        "scale": {
+            "title": "Scalable for what you need",
+            "message": [
+                "Whether you're an individual, a small group, or a big corporation, Minteck Projects' software is always there to help you get your things done.",
+                "We use technologies that scale however your group grows and that helps serve thousand of users on what they need everyday."
+            ]
+        },
+        "hack": {
+            "title": "Hack and adapt software to your needs",
+            "message": [
+                "Our software is free, libre, and opensource, which means anyone can take it, change it, and publish it without asking the authors.",
+                "This way, you can hack our software to adapt it to your needs and add new features; you can even publish your changes to be added to the original code."
+            ]
+        }
+    }
+}

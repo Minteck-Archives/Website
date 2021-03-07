@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/font/regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/font/bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/font/light.ttf");
+    font-weight: lighter;
+}
+
+*, body, html, div {
+    font-family: "Comfortaa", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: #010018;
+}
+
+#video-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #010018;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 9;
+}
+
+#takeover {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 99;
+}
+
+@keyframes scroll {
+    0% {
+        bottom: -20px;
+    }
+    50% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: -20px;
+    }
+}
+
+#scrollask {
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+}
+
+#separator {
+    height: 100vh;
+    width: 100%;
+}
+
+#space {
+    z-index: 999;
+    position: relative;
+    background-color: #010018;
+    color: white;
+}
+
+nav.navbar {
+    background-color: #03013e !important;
+}
+
+.m-center {
+    text-align: center;
+}
+
+.m-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start {
+    text-align: center;
+    padding: 20px;
+    background: #03003c;
+}
+
+hr {
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scroll-to-top {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+#scroll-to-top:hover {
+    opacity: .75;
+}
+
+#scroll-to-top:active {
+    opacity: .5;
+}
+
+#postcontent {
+    background-color: rgb(20, 20, 20);
+    font-size: 12px;
+    padding: 5px;
+}
+
+#links {
+    float: right;
+}
+
+@media (max-width: 600px) {
+    #links {
+        float: initial;
+        display: block;
+        text-align: center;
+    }
+    #postcontent {
+        text-align: center;
+    }
+}
+
+.dlink {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.dlink:hover {
+    color: inherit;
+    text-decoration: underline;
+    opacity: .75;
+}
+
+.dlink:active {
+    color: inherit;
+    text-decoration: underline;
+    opacity: .5;
+}

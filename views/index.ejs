@@ -1,0 +1,133 @@
+<%
+
+lp = req.headers["accept-language"].substr(0, 2);
+if (fs.existsSync('./lang/' + lp + ".json")) {
+    lang = JSON.parse(fs.readFileSync('./lang/' + lp + ".json"));
+} else {
+    lang = JSON.parse(fs.readFileSync('./lang/en.json'));
+}
+
+%><!DOCTYPE html>
+<html lang="<%= lp %>">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Minteck Projects · <%= lang.home.tagline %></title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/bs/styles.css">
+    <link rel="stylesheet" href="/css/global.css">
+
+    <!-- Scripts -->
+    <script src="/bs/jquery.js"></script>
+    <script src="/bs/popper.js"></script>
+    <script src="/bs/javascript.js"></script>
+    <script src="/js/global.js"></script>
+</head>
+<body id="top">
+    <video autoplay muted loop id="video-bg">
+        <source src="/img/video.webm" type="video/webm">
+    </video>
+    <div id="takeover">
+        <div id="takeover-inner">
+            <p style="font-size: 14px;"><img src="/favicon.png" style="width:24px;vertical-align:middle;"> <span style="vertical-align: middle;">Minteck Projects</span></p>
+            <p class="display-2" style="font-size: 7vw;"><%= lang.home.title[0] %><br><%= lang.home.title[1] %></p>
+            <h2><%= lang.home.continuity %></h2>
+        </div>
+        <p id="scrollask" style="position: absolute;bottom: 0;"><a href="#space"><img src="/icons/arrow_down.svg" style="width:36px;height:36px;filter:invert(1);"></a></p>
+    </div>
+
+    <div id="separator"></div>
+
+    <div id="space">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <a class="navbar-brand" href="/"><img src="/favicon.png" style="width:24px;vertical-align:middle;"></a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: none;">
+                <img src="/icons/office_apps.svg" style="height: 24px;width: 24px;filter: invert(1);">
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><%= lang.navigation.home %></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products"><%= lang.navigation.products %></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><%= lang.navigation.about %></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/legal"><%= lang.navigation.legal %></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/community"><%= lang.navigation.community %></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-center m-middle"><img src="/img/windows.webp" style="width:100%;"></div>
+                <div class="col-md-6 m-center m-middle"><div>
+                    <p class="display-4"><%= lang.boxes.design.title %></p>
+
+                    <p><big><%= lang.boxes.design.message[0] %></big></p>
+                    
+                    <p><big><%= lang.boxes.design.message[1][0] %> <%= new Date().getFullYear()-2013 %> <%= lang.boxes.design.message[1][1] %></big></p>
+                </div></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 m-center m-middle"><div>
+                    <p class="display-4"><%= lang.boxes.scale.title %></p>
+
+                    <p><big><%= lang.boxes.scale.message[0] %></big></p>
+                    
+                    <p><big><%= lang.boxes.scale.message[1] %></big></p>
+                </div></div>
+                <div class="col-md-6 m-center m-middle"><img src="/img/scalability.webp" style="width:100%;"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 m-center m-middle"><img src="/img/hackable.webp" style="width:100%;"></div>
+                <div class="col-md-6 m-center m-middle"><div>
+                    <p class="display-4"><%= lang.boxes.hack.title %></p>
+
+                    <p><big><%= lang.boxes.hack.message[0] %></big></p>
+                    
+                    <p><big><%= lang.boxes.hack.message[1] %></big></p>
+                </div></div>
+            </div>
+        </div>
+        <div id="start">
+            <h2><%= lang.start.question %></h2>
+            <a href="/products" type="button" class="btn btn-primary" style="margin-top: 10px;"><%= lang.start.explore %></a>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" style="padding: 20px 5vw;background: black;">
+            <p style="text-align:center;">
+                <a href="#top" id="scroll-to-top"><img src="/icons/arrow_up_circle.svg" style="width:48px;height:48px;filter: invert(1);"></a>
+            </p>
+            <p>
+                <%= lang.footer.copy %><br>
+                <%= lang.footer.brand %>
+            </p>
+        </div>
+        <div id="postcontent">
+            <img src="/favicon.png" style="width: 18px;vertical-align:middle;filter:contrast(0%) brightness(2000%)"><a href="/copyright" class="dlink"> © 2013-<%= new Date().getFullYear() %> Minteck Projects</a>
+            <span id="links"><a href="/privacy" class="dlink"><%= lang.navigation.privacy %></a> · <a href="/terms" class="dlink"><%= lang.navigation.terms %></a> · <a href="/disclaimers" class="dlink"><%= lang.navigation.disclaimers %></a></span>
+        </div>
+    </div>
+</body>
+</html>
